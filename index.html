@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Preferences</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>User Preferences</h1>
+    <div class="section">
+      <h2>Units of Measure</h2>
+      <div class="input-section">
+        <label for="precision-select">Distance:</label>
+        <select id="precision-select">
+          <option value="" selected disabled></option>
+          <optgroup label="Metric">
+            <option value="Kilometers">Kilometers</option>
+            <option value="Meters">Meters</option>
+            <option value="Centimeters">Centimeters</option>
+            <option value="Millimeters">Millimeters</option>
+            <option value="Microns">Microns</option>
+          </optgroup>
+          <optgroup label="Imperial">
+            <option value="Miles">Miles</option>
+            <option value="Yards">Yards</option>
+            <option value="Feet">Feet</option>
+            <option value="Feet & Inches (Decimal)">Feet & Inches (Decimal)</option>
+            <option value="Feet & Inches (Fractional)">Feet & Inches (Fractional)</option>
+          </optgroup>
+        </select>
+      </div>
+      <div id="resolution-section" class="input-section">
+        <label for="resolution-select">Resolution:</label>
+        <select id="resolution-select"></select>
+      </div>
+      <button id="set-preferences-btn">Set Preferences</button>
+    </div>
+  </div>
+
+  <script src="index-script.js"></script>
+</body>
+
+</html>
